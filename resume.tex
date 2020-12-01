@@ -28,22 +28,35 @@
 % Specify the location of the included fonts
 \fontdir[fonts/]
 
+% Colors for text
+% Uncomment if you would like to specify your own color
+\definecolor{darktext}{HTML}{414141}    % #414141
+\definecolor{text}{HTML}{000000}        % #000000
+\definecolor{graytext}{HTML}{1c1c1c}    % #1c1c1c
+\definecolor{lighttext}{HTML}{999999}   % #999999
+\definecolor{bgrey}{HTML}{6a777e}       % #6a777e
+\definecolor{bred}{HTML}{ef4b4b}        % #ef4b4b
+\definecolor{bgreen}{HTML}{2cc46e}      % #2cc46e
+\definecolor{bmagenta}{HTML}{fa5477}    % #fa5477
+\definecolor{bcyan}{HTML}{71c6ff}       % #71c6ff
+\definecolor{bpurple}{HTML}{CC78FA}     % #CC78FA
+\definecolor{bpink}{HTML}{F553bf}       % #F553bf
+\definecolor{bblue}{HTML}{6f97ec}       % #6f97ec
+\definecolor{bblue1}{HTML}{2196f3}      % #2196f3
+\definecolor{bblue2}{HTML}{0085ff}      % #0085FF
+\definecolor{bblue3}{HTML}{2A37FF}      % #2A37FF
+
+
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-orange}
+% \colorlet{awesome}{awesome-orange}
+\colorlet{awesome}{bblue3}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
-% Colors for text
-% Uncomment if you would like to specify your own color
-\definecolor{darktext}{HTML}{414141}
-\definecolor{text}{HTML}{000000}
-\definecolor{graytext}{HTML}{1c1c1c}
-\definecolor{lighttext}{HTML}{999999}
-
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
+\setbool{acvSectionColorHighlight}{false}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -59,10 +72,11 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{profile}
 \name{Sam}{Foreman}
-\position{PhD. Candidate{\enskip\cdotp\enskip}Physicist / Data Scientist}
-\mobile{(630) 873-0945}
-\email{samuel-foreman@uiowa.edu}
-% \homepage{}
+\position{Physics {\enskip\cdotp\enskip} ML / Data Science}
+% \position{PhD. Candidate{\enskip\cdotp\enskip}Physicist / Data Scientist}
+% \mobile{}
+\email{foremans@anl.gov}
+\homepage{samforeman.me}
 \github{saforem2}
 \linkedin{saforem2}
 % \gitlab{gitlab-id}
@@ -84,7 +98,7 @@
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
-\makecvfooter
+\makecvfooter%
   {\today}
   {Sam Foreman~~~·~~~Résumé}
   {\thepage}
@@ -95,9 +109,11 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{resume/education.tex}
+\vspace{-0.6cm}
 \input{resume/dissertation.tex}
+\vspace{-0.3cm}
 \input{resume/experience.tex}
-\input{resume/programming.tex}
+\vspace{-0.3cm}
 \input{resume/publications.tex}
 
 
