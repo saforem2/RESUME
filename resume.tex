@@ -21,6 +21,7 @@
 
 \usepackage{fontspec}
 \usepackage{fontawesome}
+\usepackage{xcolor}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -30,6 +31,7 @@
 
 % Colors for text
 % Uncomment if you would like to specify your own color
+\definecolor{awblue}{HTML}{0085FF}
 \definecolor{darktext}{HTML}{414141}    % #414141
 \definecolor{text}{HTML}{000000}        % #000000
 \definecolor{graytext}{HTML}{1c1c1c}    % #1c1c1c
@@ -37,7 +39,8 @@
 \definecolor{bgrey}{HTML}{6a777e}       % #6a777e
 \definecolor{bred}{HTML}{ef4b4b}        % #ef4b4b
 \definecolor{bgreen}{HTML}{2cc46e}      % #2cc46e
-\definecolor{bmagenta}{HTML}{fa5477}    % #fa5477
+% \definecolor{bmagenta}{HTML}{fa5477}    % #fa5477
+\definecolor{bmagenta}{HTML}{FF4050}    % #fa5477
 \definecolor{bcyan}{HTML}{71c6ff}       % #71c6ff
 \definecolor{bpurple}{HTML}{CC78FA}     % #CC78FA
 \definecolor{bpink}{HTML}{F553bf}       % #F553bf
@@ -45,13 +48,33 @@
 \definecolor{bblue1}{HTML}{2196f3}      % #2196f3
 \definecolor{bblue2}{HTML}{0085ff}      % #0085FF
 \definecolor{bblue3}{HTML}{2A37FF}      % #2A37FF
+\definecolor{bblue4}{HTML}{448AFF}      % #448AFF
+\definecolor{bblue5}{HTML}{0296D4}      % #0296D4
+\definecolor{bblue6}{HTML}{299DF8}      % #299DF8
+\definecolor{materialblue}{HTML}{021AEE} %#021AEE
+\definecolor{blueA100}{HTML}{EA80FC}    %#00B0FF
+\definecolor{awesomered}{HTML}{FF005B}
+\definecolor{awmagenta}{HTML}{E040FB}
+% \definecolor{awlink}{HTML}{9A2293}%{B80Fb0}%{FF0F8B}%{F70281}%{AE81FF}%{0256AA}%{0085FF}%{F553BF}%{EF576F}%{E040FB}
+% \definecolor{awesomee}{HTML}{9A2293}
+% \definecolor{awlink}{HTML}{016B90}%{02A3DA}%{016B90}
+\definecolor{awlink}{HTML}{007DFF}%{00ACAD}%{016b90}
+% \colorlet{awcyan}{aquamarine}
+\definecolor{awplum}{HTML}{5700AD}
+\colorlet{awesomee}{cyan}
+% \newcommand\myshade{85}
 
+% \colorlet{myurlcolor}{cyan}
+% \colorlet{mylinkcolor}{NavyBlue}
+%{791973}%
+%{B80Fb0}%{FA5477}%{F553BF}%{EF576F}%{E040FB}
+%#791973
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 % \colorlet{awesome}{awesome-orange}
-\colorlet{awesome}{bblue3}
+\colorlet{awesome}{awesomered}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
@@ -72,19 +95,27 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{profile}
 \name{Sam}{Foreman}
-\position{Physics {\enskip\cdotp\enskip} ML / Data Science}
+\homepage{samforeman.me}
+% \email{foremans@anl.gov}
+\googlescholar{vV_1zDwAAAAJ&hl}{Sam Foreman}
+% \homepage{samforeman.me}
+% \email{foremans@anl.gov}
+% \position{ }
+% \address{Chicago, IL}
+
+% \vspace{-2mm}
+% \skype{ }
 % \position{PhD. Candidate{\enskip\cdotp\enskip}Physicist / Data Scientist}
 % \mobile{}
-\email{foremans@anl.gov}
-\homepage{samforeman.me}
+% \homepage{samforeman.me}
 \github{saforem2}
-\linkedin{saforem2}
+% \linkedin{saforem2}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
 % \skype{skype-id}
 % \reddit{reddit-id}
-% \extrainfo{extra informations}
+% \extrainfo{}
 
 % \quote{``Be the change that you want to see in the world."}
 
@@ -99,21 +130,35 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter%
-  {\today}
-  {Sam Foreman~~~·~~~Résumé}
-  {\thepage}
+  {}
+  {%
+    % \href{https://samforeman.me}{\faHome\acvHeaderIconSep samforeman.me}%
+    % {\color{darktext}{\enskip\textbar\enskip}}
+    % \href{mailto:foremans@anl.gov}{\faEnvelope\acvHeaderIconSep foremans@anl.gov}
+    % {\color{darktext}{\enskip\textbar\enskip}}
+    % \href{https://bit.ly/sf-gSch}{\faGraduationCap\acvHeaderIconSep Sam Foreman}%
+    % {\color{darktext}{\enskip\textbar\enskip}}
+    \href{https://github.com/saforem2}{\color{awesome}{\faGithubSquare\acvHeaderIconSep saforem2}}%
+    {\color{darktext}{\enskip\textbar\enskip}}
+    \href{https://twitter.com/saforem2}{\color{awesome}{\faTwitter\acvHeaderIconSep saforem2}}%
+    {\color{darktext}{\enskip\textbar\enskip}}
+    \href{https://www.linkedin.com/in/saforem2}{\color{awesome}{\faLinkedinSquare\acvHeaderIconSep saforem2}}%
+  }
+  {}
 
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
+% \input{resume/dissertation.tex}
+% \vspace{-0.3cm}
+  \vspace{-0.25cm}
 \input{resume/education.tex}
-\vspace{-0.6cm}
-\input{resume/dissertation.tex}
-\vspace{-0.3cm}
+\vspace{-0.75cm}
 \input{resume/experience.tex}
 \vspace{-0.3cm}
+% \vspace{-0.3cm}
 \input{resume/publications.tex}
 
 

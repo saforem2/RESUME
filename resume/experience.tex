@@ -1,60 +1,96 @@
-%\begin{document}
-\vspace{-1.75ex}
 \cvsection{Experience}
 \begin{cventries}
-  %
-  \cventrycustom%
+
+  \cventry
+  % {\href{https://www.alcf.anl.gov/about/people/sam-foreman}{Postdoctoral Research Associate}
+  {\href{https://www.alcf.anl.gov/about/people/sam-foreman}{\textcolor{awlink}{Postdoctoral Research Associate}}}
+  {Argonne National Laboratory}
+  {\href{https://www.alcf.anl.gov}{\textcolor{awesome}{Leadership Computing Facility (ALCF)}}}
+  {2019 -- Current}
+  {
+    \begin{cvitems}
+    \item {Active member of the data science group}
+      \begin{cvsubitems}
+      \item{Responsible for building, testing, documenting, and maintaing current ML frameworks and libraries across
+        LCF's various supercomputing clusters (e.g.
+      \textbf{\href{https://argonne-lcf.github.io/ThetaGPU-Docs/}{Theta/ThetaGPU}})}
+      \item{Presentation on \href{https://bit.ly/DeepHyperSDL21}{\textbf{Hyperparameter Search Using DeepHyper on
+              Theta}} at the \href{https://github.com/argonne-lcf/sdl_ai_workshop}{\emph{\color{awlink}{ALCF: Simulation, Data, and Learning
+        Workshop for AI}}}}
+      \item{Presentation on \href{https://bit.ly/scaling_CPW21}{\textbf{Scaling Deep Learning Applications}}}
+        \textit{(\href{https://youtu.be/ESbk-ESLhqk}{recording})} at the the
+        \href{https://github.com/argonne-lcf/CompPerfWorkshop-2021}{\emph{\color{awlink}{2021 Computational Performance
+        Workshop}}}
+      \item{Lead and contribute to discussions in our journal club, most recently presented on
+        \textbf{\href{https://anl.app.box.com/v/switch-transformers}{Switch Transformers}}}
+      \end{cvsubitems}
+    \item{Designed and implemented novel network architectures to improve current sampling techniques for Lattice QCD}
+    \item{Extensive development (sole author) on
+        {\href{https://www.github.com/saforem2/l2hmc-qcd}{\textbf{l2hmc-qcd}}}, a python library for
+        distributed, data-parallel training, tracking, and testing of different generative models for sampling in
+        lattice gauge models}
+      \begin{cvsubitems}
+  \item{Shown to provide \textbf{\textasciitilde\(\mathbf{100\,\times}\)} speedup compared to current methods}
+      \item{Ongoing work to scale up to full Lattice QCD}
+      \end{cvsubitems}
+    \end{cvitems}
+  }
+
+  \cventry
   {Graduate Research Fellow} % Job title
   {Argonne National Laboratory} % Location
-  {Computational Sciences Division} % Organization
-  {Summer 2018 --- Summer 2019} % Date(s)
+  {\href{https://www.anl.gov/cps}{\textcolor{awesome}{Computational Sciences Division}}} % Organization
+  {2018 --- 2019} % Date(s)
   {
-    \begin{cvitemscustom} % Description(s) of tasks/responsibilities
+    % \begin{cvitemscustom} % Description(s) of tasks/responsibilities
+    \begin{cvitems}%custom}
     \item{Software development focused on applying machine learning models to
       help improve the efficiency of Hybrid Monte Carlo simulations and their
-      use in Lattice QCD.}
-    \item{Built and deployed learning models using Tensorflow/Keras on some of
-      the world's fastest supercomputers using state-of-the-art
-      high-performance computing techniques.}
-    \item{Developed a method for training Markov Chain Monte Carlo kernels
-      parameterized with deep neural networks that shows promise in out
-      performing traditional methods on a variety of different models.}
-    \end{cvitemscustom}
+      use in Lattice QCD}
+    \item{Built and deployed custom ML models on some of the world's fastest supercomputers
+      (\href{https://alcf.anl.gov/support-center/theta-and-thetagpu}{Theta/ThetaGPU}) using state-of-the-art
+    high-performance computing techniques}
+    % \item{Developed a method for training Markov Chain Monte Carlo kernels
+    %   parameterized with deep neural networks that shows promise in out
+    %   performing traditional methods on a variety of different models.}
+    \end{cvitems}
+    % \end{cvitemscustom}
   }
-  \vspace{-2mm}
-  %
-  \cventrycustom%
+
+  \cventry%custom%
   {Research Assistant} % Job title
   {University of Iowa} % Location
-  {Department of Physics \& Astronomy} % Organization
-  {Spring 2016 --- Fall 2016} % Date(s)
+  {\color{awesome}{Department of Physics \& Astronomy}} % Organization
+  {2016 --- 2017} % Date(s)
   {
-    \begin{cvitemscustom} % Description(s) of tasks/responsibilities
+  \begin{cvitems}%custom} % Description(s) of tasks/responsibilities
     \item{Software and hardware development for HaloSat, a nanosatellite built
-      with the goal of better understanding the missing baryon problem.}
+      with the goal of better understanding the missing baryon problem}
     \item{Implemented a variety of in-flight optimization algorithms aimed at
       maximizing the incoming X-ray signals (by minimizing background noise)
-      while in operation.}
-    \end{cvitemscustom}
+      while in operation}
+  \end{cvitems}%custom}
   }
-  \vspace{-2mm}
-  %
-  \cventrycustom%
+
+  \cventry%custom%
   {Research Assistant} % Job title
   {University of Illinois}
-  {Center for Complex Systems Research} % Organization
-  {Spring 2011 --- Spring 2015}
+  {\color{awesome}{Center for Complex Systems Research}} % Organization
+  {2011 --- 2015}
   {
-    \begin{cvitemscustom}
+  \begin{cvitems}%custom}
     \item{Actively maintained the legacy code base (C++ / MATLAB) for our
       research group and was in charge of quality analysis of new
-      contributions.}
-    \item{Constructed a model capable of describing the energy density and
-      self-discharge time of nanoscale capacitors.}
-    \item {This work was submitted as a patent (pending) titled ``Energy Storage
-      in Quantum Resonators'', on which I was designated a co-inventor together
-      with my advisor Alfred H\"ubler.}
-    \end{cvitemscustom}
+      contributions}
+      \begin{cvsubitems}
+      \item{Co-inventor on a patent (pending) titled ``Energy Storage in Quantum Resonators''}
+      \end{cvsubitems}
+    % \item{Constructed a model capable of describing the energy density and
+    %   self-discharge time of nanoscale capacitors}
+    % \item {This work was submitted as a patent (pending) titled ``Energy Storage
+    %   in Quantum Resonators'', on which I was designated a co-inventor together
+    %   with my advisor Alfred H\"ubler}
+  \end{cvitems}%custom}
   }
+
 \end{cventries}
-%\end{document}
