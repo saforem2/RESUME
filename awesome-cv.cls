@@ -103,6 +103,8 @@
 }
 % \definecolor{awblue}{HTML}{0085FF}
 % #2cc46e  #ef4b4b  #6f97ec #5bc0eb  #CC78FA  #F03e4D #F553bF
+\definecolor{awesomegreen}{HTML}{2cc46e}
+\definecolor{awesomegrey}{HTML}{666666}
 
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
